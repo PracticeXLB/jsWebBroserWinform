@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function OpenIE(url) {
+            window.external.OpenIE(url);
+        }
+        function AlertTest(paramStr) {
+            alert("ddd" + paramStr);
+        }
+    </script>
+</head>
+<body>
+    <a href="http://www.baidu.com" target="_blank">(拦截点击连接事件打开IE)</a><br />
+    <a href="javascript:OpenIE('http://www.baidu.com');"> js调用C#方式打开IE浏览器</a>
+</body>
+</html>
